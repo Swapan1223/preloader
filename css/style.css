@@ -1,0 +1,39 @@
+body{
+ padding: 0;
+ margin: 0;
+ height: 100vh;
+ background:#aac44b;
+}
+.loader{
+    background:#111;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader div{
+    background: #FFF;
+    width: 16px;
+    height: 32px;
+    margin-left: 10px;
+    animation: loader 1.2s infinite;
+}
+@keyframes loader{
+    50%{
+        height: 75px;
+    }
+}
+.loader div:nth-child(1){
+    background: #C70039 ;
+    animation-delay: -0.40s;
+}
+
+.loader div:nth-child(2){
+    background: #FFC300;
+    animation-delay: -0.20s;
+}
+
+.loader div:nth-child(3){
+    background: #35AB45;
+    animation-delay: 0s;
+}
